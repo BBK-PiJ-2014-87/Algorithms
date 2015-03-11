@@ -13,30 +13,31 @@ import org.junit.Test;
  *
  */
 public class BubbleSorterTest {
-	private int[] arrTested; // array to be used as an argument for method calls
+	private int[] arrTested; // array to be used as a method argument
 	private int[] arrExpected; // expected result
-	private int[] arrTested2; // array to be used as an argument for method
-								// calls
+	private int[] arrTested2; // array to be used as a method argument
 	private int[] arrExpected2; // expected result
-	private int[] arrTested3; // array to be used as an argument for method
-								// calls
+	private int[] arrTested3; // array to be used as a method argument
 	private int[] arrExpected3; // expected result
-	private int[] arrTested4; // array to be used as an argument for method
-								// calls
+	private int[] arrTested4; // array to be used as a method argument
 	private int[] arrExpected4; // expected result
 
 	@Before
 	public void initialize() {
-		arrTested = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 }; // functional
-																// test in
-																// normal case
+		//functional test in normal case
+		arrTested = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 		arrExpected = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		arrTested2 = new int[] { 10 }; // test 1 element array
+		
+		// test 1 element array
+		arrTested2 = new int[] { 10 }; 
 		arrExpected2 = new int[] { 10 };
-		arrTested3 = new int[] { -1, 1, -2, 2, -3, 3 }; // test with negative
-														// numbers
+		
+		//test with a negative numbers
+		arrTested3 = new int[] { -1, 1, -2, 2, -3, 3 };
 		arrExpected3 = new int[] { -3, -2, -1, 1, 2, 3 };
-		arrTested3 = new int[] {}; // test empty array
+		
+		//empty array test
+		arrTested3 = new int[] {};
 		arrExpected3 = new int[] {};
 	}
 
