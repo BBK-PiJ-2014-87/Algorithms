@@ -2,15 +2,15 @@ package sorting.bubblesort;
 
 import java.util.Arrays;
 /**
- * This class provides static methods for sorting arrays with a 
- * Bubble Sort algorithms.
+ * This class provides static methods for sorting arrays with a
+ * various options of Bubble Sort algorithms.
  * 
- * @author Workstation
+ * @author Vladimirs Ivanovs
  *
  */
 public class BubbleSorter {
 	/**
-	 * Sort the array starting from index 0 to the last element of this array.
+	 * Sorts the array starting from the first to the last element.
 	 * @param array to be sorted
 	 */
 	public static void sortBubbleOne(int[] array){
@@ -33,7 +33,7 @@ public class BubbleSorter {
 		System.out.println();
 	}
 	/**
-	 * Sorts the array starting from index 0 to the last array element.
+	 * Sorts the array starting from the first element to the last.
 	 * @param array to be sorted
 	 */
 	public static void sortBubbleTwo(int[] array){
@@ -57,8 +57,8 @@ public class BubbleSorter {
 		
 	}
 	/**
-	 * Sorts the array starting from the last element and to the first element
-	 * of this array.
+	 * Sorts the array starting from the last element to the first.
+	 * 
 	 * @param array to be sorted
 	 */
 	public static void sortBubbleThree(int[] array){

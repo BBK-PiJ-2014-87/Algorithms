@@ -21,6 +21,7 @@ public class BubbleSorterTest {
 	private int[] arrExpected3; // expected result
 	private int[] arrTested4; // array to be used as a method argument
 	private int[] arrExpected4; // expected result
+	
 
 	@Before
 	public void initialize() {
@@ -37,8 +38,8 @@ public class BubbleSorterTest {
 		arrExpected3 = new int[] { -3, -2, -1, 1, 2, 3 };
 
 		// empty array test
-		arrTested3 = new int[] {};
-		arrExpected3 = new int[] {};
+		arrTested4 = new int[] {};
+		arrExpected4 = new int[] {};
 	}
 
 	@Test
