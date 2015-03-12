@@ -24,19 +24,19 @@ public class BubbleSorterTest {
 
 	@Before
 	public void initialize() {
-		//functional test in normal case
+		// functional test in normal case
 		arrTested = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 		arrExpected = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		
+
 		// test 1 element array
-		arrTested2 = new int[] { 10 }; 
+		arrTested2 = new int[] { 10 };
 		arrExpected2 = new int[] { 10 };
-		
-		//test with a negative numbers
+
+		// test with a negative numbers
 		arrTested3 = new int[] { -1, 1, -2, 2, -3, 3 };
 		arrExpected3 = new int[] { -3, -2, -1, 1, 2, 3 };
-		
-		//empty array test
+
+		// empty array test
 		arrTested3 = new int[] {};
 		arrExpected3 = new int[] {};
 	}
@@ -86,6 +86,30 @@ public class BubbleSorterTest {
 	@Test
 	public void testSortBubbleTwo4() {
 		BubbleSorter.sortBubbleTwo(arrTested4);
+		assertArrayEquals(arrExpected4, arrTested4);
+	}
+
+	@Test
+	public void testSortBubbleThree() {
+		BubbleSorter.sortBubbleThree(arrTested);
+		assertArrayEquals(arrExpected, arrTested);
+	}
+
+	@Test
+	public void testSortBubbleThree2() {
+		BubbleSorter.sortBubbleThree(arrTested2);
+		assertArrayEquals(arrExpected2, arrTested2);
+	}
+
+	@Test
+	public void testSortBubbleThree3() {
+		BubbleSorter.sortBubbleThree(arrTested3);
+		assertArrayEquals(arrExpected3, arrTested3);
+	}
+
+	@Test
+	public void testSortBubbleThree4() {
+		BubbleSorter.sortBubbleThree(arrTested4);
 		assertArrayEquals(arrExpected4, arrTested4);
 	}
 
