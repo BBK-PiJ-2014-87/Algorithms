@@ -20,6 +20,12 @@ public class InsertionSorterTest {
 		InsertionSorter.sortInsertionOne(testArray);
 		assertArrayEquals(testArrayExp,testArray);
 	}
+	
+	@Test
+	public void testSortInsertionTwo() {
+		InsertionSorter.sortInsertionOne(testArray);
+		assertArrayEquals(testArrayExp,testArray);
+	}
 
 
 }
