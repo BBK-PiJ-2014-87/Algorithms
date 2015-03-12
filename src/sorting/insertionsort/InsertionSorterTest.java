@@ -8,11 +8,13 @@ import org.junit.Test;
 public class InsertionSorterTest {
 	private int[] testArray;		//to be sorted
 	private int[] testArrayExp;		//expected output
+	private int[] testArrayExp2;		//expected output
 	
 	@Before
 	public void initialize(){
-		testArray = new int[]{9,1,8,2,7,3,6,4,5,5,0};
-		testArrayExp = new int[]{0,1,2,3,4,5,5,6,7,8,9};
+		testArray = new int[]{4,1,2,3,0};
+		testArrayExp = new int[]{0,1,2,3,4};
+		testArrayExp2 = new int[]{4,3,2,1,0};
 	}
 
 	@Test
@@ -23,8 +25,14 @@ public class InsertionSorterTest {
 	
 	@Test
 	public void testSortInsertionTwo() {
-		InsertionSorter.sortInsertionOne(testArray);
+		InsertionSorter.sortInsertionTwo(testArray);
 		assertArrayEquals(testArrayExp,testArray);
+	}
+	
+	@Test
+	public void testSortInsertionThree() {
+		InsertionSorter.sortInsertionThree(testArray);
+		assertArrayEquals(testArrayExp2,testArray);
 	}
 
 
